@@ -111,23 +111,26 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
-  min-width: 560px;
   position: relative;
+  width: 100%; /* Allow full width */
 }
 
 .animated-item {
   color: #ffc200;
-}
-
-.animated-item {
   font-size: 38px;
   line-height: inherit;
-  display: block;
+  display: inline-block; /* Prevent breaking into new lines */
   opacity: 0;
   position: absolute;
   top: 0; /* Keep all items in the same vertical position */
   left: 0;
-  animation: fadeInOut 15s infinite; /* 10s total for all 5 items */
+  animation: fadeInOut 15s infinite; /* 15s total for all 5 items */
+}
+
+@media (max-width: 767px) {
+  .animated-item {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
 }
 
 @keyframes fadeInOut {
