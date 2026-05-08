@@ -20,7 +20,7 @@ Built using:
 
 You can view the project here:
 
-https://github.com/acetheunfazed/sabi
+https://acetheunfazed.github.io/SABI-Website/
 
 ## License
 
